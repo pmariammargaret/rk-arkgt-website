@@ -6,7 +6,7 @@ import './Home.css'; // Ensure you create and import a CSS file for custom style
 
 const images = [
   { src: '/assets/images/home/home-slider-1-selectedrawmat.jpg', text: 'From Selected Raw Material' },
-  { src: '/assets/images/home/home-slider-2-deliverwithcare.jpg', text: 'Deliver With Care' },
+  { src: '/assets/images/home/home-slider-2-deliverwithcare.jpg', text: 'Delivered With Care' },
   { src: '/assets/images/home/home-slider-3-trackdelivery.jpg', text: 'Track Delivery' },
   { src: '/assets/images/home/home-slider-4-since.jpg', text: 'Since 2023' },
   { src: '/assets/images/home/home-slider-5-deliveredontime.jpg', text: 'Delivered on Time' },
@@ -26,7 +26,7 @@ function Home() {
   };
 
   return (
-    <div style={{ color: 'black', padding: '20px', paddingTop: '80px' }}>
+    <div style={{ color: 'black', padding: '20px', paddingTop: '0px' }}>
       <Slider {...settings}>
         {images.map((image, index) => (
           <div key={index} className="slider-item">
