@@ -1,0 +1,24 @@
+/* styles.css */
+.menu-container {
+    padding: 20px;
+    display: flex;
+    flex-direction: column; /* Arrange theme buttons above the menu */
+    align-items: center; /* Center horizontally */
+  }
+  
+  .theme-buttons {
+      margin-bottom: 20px; /* Space between buttons and menu */
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+  }
+  .menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+  }
+  
+  .menu li {
+    margin: 0 10px; /* Space between menu items */
+  }

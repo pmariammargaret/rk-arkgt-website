@@ -1,0 +1,26 @@
+{
+    "companyName": "ARK General Trading FZ-LCC",
+    "email": "arkgt2023@gmail.com",
+    "phone": "+971 5885 37035",    
+    "address": {
+      "address1": "SBAMO102. Compass Building",
+      "address2": "AL Shohada Road, AL SHamra Industrial Zone - FZ",
+      "city": "RAS AL KHAIMAH",
+      "state": "RAS AL KHAIMAH",
+      "country": "United Arab Emirates",
+      "zip": ""
+    },
+    "socialMedia": {
+      "facebook": "",
+      "twitter": "",
+      "linkedin": "",
+      "whatsapp": ""
+
+    },
+    "logo": "/assets/images/ARK_logo3.png",
+    "favicon": "/assets/images/favicon.ico",
+    "copyright": "© 2024 ARK General Trading FZ-LCC. All rights reserved.",
+    "termsLink": "/terms",
+    "privacyLink": "/privacy"
+
+  }
