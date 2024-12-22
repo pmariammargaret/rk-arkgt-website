@@ -8,6 +8,8 @@
     "react-dom": "^19.0.0",
     "react-scripts": "5.0.1",
     "react-router-dom": "^6.2.1",
+    "react-slick": "0.30.3",
+    "slick-carousel": "1.8.1",
     "web-vitals": "4.2.4",
     "@mui/material": "6.2.1",
     "@mui/icons-material": "6.2.1",

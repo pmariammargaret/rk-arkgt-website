@@ -2,6 +2,11 @@
     "companyName": "ARK General Trading FZ-LCC",
     "email": "arkgt2023@gmail.com",
     "phone": "+971 5885 37035",    
+    "logo": "/assets/images/ARK_logo3.png",
+    "favicon": "/assets/images/favicon.ico",
+    "copyright": "© 2024 ARK General Trading FZ-LCC. All rights reserved.",
+    "termsLink": "/terms",
+    "privacyLink": "/privacy",
     "address": {
       "address1": "SBAMO102. Compass Building",
       "address2": "AL Shohada Road, AL SHamra Industrial Zone - FZ",
@@ -17,10 +22,43 @@
       "whatsapp": ""
 
     },
-    "logo": "/assets/images/ARK_logo3.png",
-    "favicon": "/assets/images/favicon.ico",
-    "copyright": "© 2024 ARK General Trading FZ-LCC. All rights reserved.",
-    "termsLink": "/terms",
-    "privacyLink": "/privacy"
+    "home":{},
+    "about": {
+      "title": "About Us",
+      "description": "ARK General Trading FZ-LCC is a trading company based in Ras Al Khaimah, United Arab Emirates. We sell and buy all types of products.",
+      "image": "/assets/images/about-image.jpg"
+    },
+    "services": {
+      "title": "Our Services",
+      "description": "We provide a wide range of services to our customers. Our services include buying and selling products, shipping and delivery, and customer support.",
+      "services": [
+        {
+          "title": "Buying and Selling",
+          "description": "We buy and sell all types of products. Our products include electronics, clothing, food, and more."
+        },
+        {
+          "title": "Shipping and Delivery",
+          "description": "We provide shipping and delivery services to our customers. We ship products to all over the world."
+        },
+        {
+          "title": "Customer Support",
+          "description": "We provide customer support to our customers. Our customer support team is available 24/7 to help you with any questions or concerns."
+        }
+      ]
+    },
+    "contact": {
+      "title": "Contact Us",
+      "description": "If you have any questions or concerns, please feel free to contact us. Our customer support team is available 24/7 to help you.",
+      "address": {
+        "address1": "SBAMO102. Compass Building",
+        "address2": "AL Shohada Road, AL SHamra Industrial Zone - FZ",
+        "city": "RAS AL KHAIMAH",
+        "state": "RAS AL KHAIMAH",
+        "country": "United Arab Emirates",
+        "zip": ""
+      },
+      "phone": "+971 5885 37035",
+      "email": ""
+    }
 
   }
