@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { AppBar, Box, Typography, Toolbar } from '@mui/material';
 import { styled } from '@mui/material/styles';
+import { Link } from 'react-router-dom';
 import MenuHB from '../menu/MenuHB';
 import websiteData from '../../data/website_data.json';
 import './header.css'; // Import your CSS file
@@ -36,19 +37,21 @@ function Header()  {
             <div style={{ display: 'flex', alignItems: 'center' }}>
               <img src={websiteData.logo} alt="ARK Logo" width="60" height="60" />
               <Typography variant="h6" component="div" style={{ color: 'black', fontSize: '36px', fontWeight: '', fontFamily: 'GillSansUltraBold', marginLeft: '10px' }}>
-                {websiteData.companyName}
+                <Link to="/" style={{ textDecoration: 'none', color: 'black' }}>
+                  {websiteData.companyName}
+                </Link>
               </Typography>
             </div>
-            <div style={{ display: 'flex', alignItems: 'center' }}>              
-              <Typography variant="h6" component="div" style={{ marginRight: '20px', fontSize: '14px', fontWeight: '',fontFamily: 'GillSansUltraBold', marginLeft: '10px', color: 'black'  }}>
-                <EmailIcon style={{ marginRight: '5px', height: '12px', width: '12px' }} /> 
-                <a href={`mailto:${websiteData.email}`} style={{ color: 'black' }}>               
-                  {websiteData.email}  
+            <div style={{ display: 'flex', alignItems: 'center' }}>
+            <Typography variant="h6" component="div" style={{ marginRight: '20px', fontSize: '14px', fontWeight: '',fontFamily: 'GillSansUltraBold', marginLeft: '10px', color: 'black'  }}>
+                <EmailIcon style={{ marginRight: '5px', height: '12px', width: '12px' }} />
+                <a href={`mailto:${websiteData.email}`} style={{ color: 'black' }}>
+                  {websiteData.email}
                 </a>
-                <PhoneIcon style={{ marginRight: '5px', height: '12px', width: '12px' }} /> 
+                <PhoneIcon style={{ marginRight: '5px', height: '12px', width: '12px' }} />
                 <a href={`tel:${websiteData.phone}`} style={{ color: 'black' }}>
-                  {websiteData.phone}         
-                </a>        
+                  {websiteData.phone}
+                </a>
               </Typography>
               <MenuHB />
             </div>
