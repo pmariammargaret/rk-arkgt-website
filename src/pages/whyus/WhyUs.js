@@ -78,7 +78,7 @@ const WhyUs = () => {
   };
 
   return (
-    <Box sx={{ flexGrow: 1, padding: 3, display: 'flex', flexDirection: 'column', height: '100%' }}>
+    <Box sx={{ flexGrow: 1, padding: 7, display: 'flex', flexDirection: 'column', height: '100%' }}>
       <Typography fontWeight="bold" gutterBottom align='center' variant="h6" component="div" style={{ color: 'black', fontSize: '36px', fontWeight: '', fontFamily: 'GillSansUltraBold', marginLeft: '10px' }}>
         Why Us
       </Typography>

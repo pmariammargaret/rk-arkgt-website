@@ -35,10 +35,10 @@ const MenuHB = () => {
           'aria-labelledby': 'basic-button',
         }}
       >
-        <MenuItem onClick={handleClose} component={Link} to="/home">Home</MenuItem>
-        <MenuItem onClick={handleClose} component={Link} to="/product">Product</MenuItem>
-        <MenuItem onClick={handleClose} component={Link} to="/contact">Contact</MenuItem>
-        <MenuItem onClick={handleClose} component={Link} to="/team">Team</MenuItem>
+        <MenuItem onClick={handleClose} component={Link} to="/">Home</MenuItem>
+        <MenuItem onClick={handleClose} component={Link} to="/whyus">Why Us</MenuItem>
+        <MenuItem onClick={handleClose} component={Link} to="/ourproduct">Our Product</MenuItem>
+        <MenuItem onClick={handleClose} component={Link} to="/contactus">Contact Us</MenuItem>
       </Menu>
     </>
   );

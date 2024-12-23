@@ -21,7 +21,7 @@ const AboutUs = () => {
         flexDirection: 'column',
         minHeight: '100vh', // Ensure full viewport height
         backgroundColor: '',//'#e0f2f7', // Light blue background
-        padding: 3,
+        padding: 7,
       }}
     >
         <Container maxWidth="md"> {/* Use Container for better content width control */}

@@ -1,8 +1,8 @@
 import React from 'react';
 import { useLocation } from 'react-router-dom';
 import Home from './pages/home/Home';
-import Product from './pages/products/Product';
-import Contact from './pages/contactus/ContactUs';
+import OurProduct from './pages/outproducts/OurProducts';
+import ContactUs from './pages/contactus/ContactUs';
 import Header from './components/header/Header';
 import Footer from './components/footer/Footer';
 import Team from './pages/team/Team';
@@ -21,8 +21,8 @@ function App() {
         {location.pathname === '/home' && <Home />}
         {location.pathname === '/aboutus' && <AboutUs />}
         {location.pathname === '/whyus' && <WhyUS />}
-        {location.pathname === '/product' && <Product />}
-        {location.pathname === '/contact' && <Contact />}
+        {location.pathname === '/ourproduct' && <OurProduct />}
+        {location.pathname === '/contactus' && <ContactUs />}
         {location.pathname === '/team' && <Team />}
       </div>
       <Footer />

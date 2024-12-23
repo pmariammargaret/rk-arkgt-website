@@ -1,7 +1,8 @@
 {
     "companyName": "ARK General Trading FZ-LCC",
     "email": "arkgt2023@gmail.com",
-    "phone": "+971 5885 37035",    
+    "phone": "+971588537035",    
+    "phoneFormatted": "+971 5885 37035",    
     "logo": "/assets/images/ARK_logo3.png",
     "favicon": "/assets/images/favicon.ico",
     "copyright": "© 2024 ARK General Trading FZ-LCC. All rights reserved.",

@@ -4,9 +4,10 @@ import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
-import TextField from '@mui/material/TextField';
-import Button from '@mui/material/Button';
 import Grid from '@mui/material/Grid';
+import EmailIcon from '@mui/icons-material/Email';
+import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
+import websiteData from '../../data/website_data.json';
 
 const Item = styled(Paper)(({ theme }) => ({
     backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
@@ -17,13 +18,14 @@ const Item = styled(Paper)(({ theme }) => ({
 }));
 
 const ContactUs = () => {
+
     return (
-        <Box
+        <Box 
             sx={{
                 display: 'flex',
                 flexDirection: 'column',
-                minHeight: '100vh',
-                padding: 3,
+                minHeight: '60vh',
+                padding: 7,
             }}
         >
             <Container maxWidth="md">
@@ -34,58 +36,42 @@ const ContactUs = () => {
                     <Grid item xs={12} md={6}>
                         <Item elevation={3}>
                             <Typography variant="h6" gutterBottom>
-                                Get in Touch
+                                <b>Get in Touch</b>
                             </Typography>
                             <Typography variant="body1" gutterBottom>
-                                Have an inquiry or some feedback for us? Fill out the form below to contact our team.
+                                Contact us via email or phone.
                             </Typography>
-                            <TextField fullWidth id="name" label="Name" variant="outlined" margin="normal" />
-                            <TextField fullWidth id="email" label="Email" variant="outlined" margin="normal" type="email" />
-                            <TextField
-                                fullWidth
-                                id="message"
-                                label="How can we help?"
-                                multiline
-                                rows={4}
-                                variant="outlined"
-                                margin="normal"
-                            />
-                            <Button variant="contained" sx={{ mt: 2 }}>SUBMIT</Button>
+                            <Box sx={{ display: 'flex', alignItems: 'center', mb: 1 }}>{/*Email box with icon*/}
+                                <EmailIcon sx={{ mr: 1 }} />
+                                <a href={`mailto:${websiteData.email}`} style={{ color: 'inherit', textDecoration: 'none' }}>
+                                    <b>{websiteData.email}</b>
+                                </a>
+                            </Box>
+                            <Box sx={{ display: 'flex', alignItems: 'center' }}>{/*Phone box with icon*/}
+                                <LocalPhoneIcon sx={{ mr: 1 }} />
+                                <a href={`tel:${websiteData.phone}`} style={{ color: 'inherit', textDecoration: 'none' }}>
+                                    <b>{websiteData.phoneFormatted}</b>
+                                </a>
+                            </Box>
                         </Item>
                     </Grid>
                     <Grid item xs={12} md={6}>
                         <Item elevation={3}>
-                            <Typography variant="h6" gutterBottom>
-                                Contact Us
-                            </Typography>
                             <Typography variant="body1" gutterBottom>
                                 Any questions or remarks? Just write us a message!
                             </Typography>
                             <Grid container spacing={2}>
                                 <Grid item xs={12}>
-                                    <Typography variant="h6" gutterBottom>
-                                        Sydney
+                                    <Typography variant="h6" gutterBottom >
+                                        {websiteData.address.country}
                                     </Typography>
                                     <Typography variant="body2">
-                                        45 Pirrama Rd, Pyrmont NSW 2022
+                                        {websiteData.companyName} <br/> 
+                                        {websiteData.address.address1}, {websiteData.address.address2}  <br/>
+                                        {websiteData.address.city}, {websiteData.address.country}  <br/>
+                                        {websiteData?.address?.zip}
                                     </Typography>
-                                </Grid>
-                                <Grid item xs={12}>
-                                    <Typography variant="h6" gutterBottom>
-                                        Melbourne
-                                    </Typography>
-                                    <Typography variant="body2">
-                                        163 Collins St, Melbourne VIC 3000
-                                    </Typography>
-                                </Grid>
-                                <Grid item xs={12}>
-                                    <Typography variant="h6" gutterBottom>
-                                        Los Angeles
-                                    </Typography>
-                                    <Typography variant="body2">
-                                        340 Main St, Venice CA 902291, USA
-                                    </Typography>
-                                </Grid>
+                                </Grid>                            
                             </Grid>
                         </Item>
                     </Grid>

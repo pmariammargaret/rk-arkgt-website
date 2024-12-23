@@ -1,11 +1,10 @@
 import React from 'react';
-import Product from '../products/Product';
-import Team from '../team/Team';
 import ContactUs from '../contactus/ContactUs';
 import Home from '../home/Home';
 import WhyUs from '../whyus/WhyUs';
 import AboutUs from '../aboutus/AboutUs';
 import HL from '../../components/html/HL';
+import OurProducts from '../outproducts/OurProducts';
 
 function Default() {
     return (
@@ -13,14 +12,12 @@ function Default() {
           <Home /> 
           <HL />
           <AboutUs />  
+          <HL />
+          <OurProducts />  
+          <HL />
           <WhyUs />       
           <HL />
-          <Product />
-          <HL />
-          <Team />
-          <HL />
           <ContactUs />
-          Defa
         </div>
       );
     }
