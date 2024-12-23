@@ -2,7 +2,6 @@ import React from 'react';
 import { styled } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
-import Grid from '@mui/material/Grid';
 import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
 import ListItemButton from '@mui/material/ListItemButton';
@@ -42,7 +41,7 @@ const ContentBox = ({ title, description }) => {
       <Typography variant="h5" gutterBottom>
         {title}
       </Typography>
-      <Typography variant="body1">
+      <Typography variant="body1" sx = {{padding: 3 }}>
         {description}
       </Typography>
     </Item>
@@ -75,20 +74,24 @@ const WhyUs = () => {
   };
 
   return (
-    <Box sx={{ flexGrow: 1, padding: 3 }}>
-        <Typography variant="h4" fontWeight="bold" color="black" gutterBottom align='center'>
-            Why Us
-        </Typography>
-      <Grid container spacing={2}>
-        <Grid item xs={12} sm={4}>
-          <LeftSideMenu onMenuItemClick={handleMenuItemClick} selectedMenuItem={selectedMenuItem} />
-        </Grid>
-        <Grid item xs={12} sm={8}>
-          <ContentBox title={content[selectedMenuItem].title} description={content[selectedMenuItem].description} />
-        </Grid>
-      </Grid>
+    <Box sx={{ flexGrow: 1, padding: 3, display: 'flex', flexDirection: 'column', height: '100%' }}>
+      <Typography variant="h4" fontWeight="bold" color="black" gutterBottom align='center'>
+        Why Us
+      </Typography>
+      <Box sx={{ display: 'flex', height: '100%' }}>
+        <Box sx={{ width: '30%', display: 'flex', flexDirection: 'column' }}>
+          <Paper elevation={3} sx={{ flexGrow: 1, overflow: 'auto' }}>
+            {/* Important: added overflow auto so that if menu items are more it shows scrollbar */}
+            <LeftSideMenu onMenuItemClick={handleMenuItemClick} selectedMenuItem={selectedMenuItem} />
+          </Paper>
+        </Box>
+        <Box sx={{ width: '70%', pl: 2, display: 'flex', flexDirection: 'column', flexGrow: 1 }}>
+          <Paper elevation={3} sx={{ flexGrow: 1, padding: 2 }}>
+            <ContentBox  title={content[selectedMenuItem].title} description={content[selectedMenuItem].description} />
+          </Paper>
+        </Box>
+      </Box>
     </Box>
   );
 };
-
 export default WhyUs;
