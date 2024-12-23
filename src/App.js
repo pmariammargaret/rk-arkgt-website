@@ -2,12 +2,13 @@ import React from 'react';
 import { useLocation } from 'react-router-dom';
 import Home from './pages/home/Home';
 import Product from './pages/products/Product';
-import Contact from './pages/contact/Contact';
+import Contact from './pages/contactus/ContactUs';
 import Header from './components/header/Header';
 import Footer from './components/footer/Footer';
 import Team from './pages/team/Team';
 import Default from './pages/default/Default';
 import WhyUS from './pages/whyus/WhyUs';
+import AboutUs from './pages/aboutus/AboutUs';
 
 function App() {
   const location = useLocation();
@@ -18,6 +19,7 @@ function App() {
       <div className="content">
         {location.pathname === '/' && <Default />}
         {location.pathname === '/home' && <Home />}
+        {location.pathname === '/aboutus' && <AboutUs />}
         {location.pathname === '/whyus' && <WhyUS />}
         {location.pathname === '/product' && <Product />}
         {location.pathname === '/contact' && <Contact />}

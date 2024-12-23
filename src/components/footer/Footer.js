@@ -16,8 +16,8 @@ function Footer() {
             {websiteData.address.address1}, {websiteData.address.address2} 
             {websiteData.address.city}, {websiteData.address.country} {websiteData?.address?.zip} |
             All rights reserved. |
-            <a href="{websiteData.termsLink}">Terms</a> | 
-            <a href="{websiteData.privacyLink}">Privacy</a> |
+            {/*<a href="">Terms</a> | 
+            <a href="">Privacy</a> |*/}
             Website by MJ
         </nav>
       </div>

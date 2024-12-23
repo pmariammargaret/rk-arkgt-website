@@ -36,7 +36,7 @@ function Header()  {
           <StyledToolbar> {/* Use the styled Toolbar */}
             <div style={{ display: 'flex', alignItems: 'center' }}>
               <img src={websiteData.logo} alt="ARK Logo" width="60" height="60" />
-              <Typography variant="h6" component="div" style={{ color: 'black', fontSize: '36px', fontWeight: '', fontFamily: 'GillSansUltraBold', marginLeft: '10px' }}>
+              <Typography fontWeight="bold" variant="h6" component="div" style={{ color: 'black', fontSize: '36px', fontWeight: '', fontFamily: 'GillSansUltraBold', marginLeft: '10px' }}>
                 <Link to="/" style={{ textDecoration: 'none', color: 'black' }}>
                   {websiteData.companyName}
                 </Link>
