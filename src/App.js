@@ -7,6 +7,7 @@ import Header from './components/header/Header';
 import Footer from './components/footer/Footer';
 import Team from './pages/team/Team';
 import Default from './pages/default/Default';
+import WhyUS from './pages/whyus/WhyUs';
 
 function App() {
   const location = useLocation();
@@ -17,6 +18,7 @@ function App() {
       <div className="content">
         {location.pathname === '/' && <Default />}
         {location.pathname === '/home' && <Home />}
+        {location.pathname === '/whyus' && <WhyUS />}
         {location.pathname === '/product' && <Product />}
         {location.pathname === '/contact' && <Contact />}
         {location.pathname === '/team' && <Team />}
