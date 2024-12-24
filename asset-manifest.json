@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/rk-arkgt-website/static/css/main.7f3a641c.css",
-    "main.js": "/rk-arkgt-website/static/js/main.df9e3759.js",
+    "main.js": "/rk-arkgt-website/static/js/main.551b8f14.js",
     "static/media/gill-sans-ultra-bold.ttf": "/rk-arkgt-website/static/media/gill-sans-ultra-bold.4bdf0eac54f0e5c6807c.ttf",
     "static/media/slick.svg": "/rk-arkgt-website/static/media/slick.2630a3e3eab21c607e21.svg",
     "static/media/slick.eot": "/rk-arkgt-website/static/media/slick.a4e97f5a2a64f0ab1323.eot",
@@ -9,10 +9,10 @@
     "static/media/slick.woff": "/rk-arkgt-website/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/rk-arkgt-website/index.html",
     "main.7f3a641c.css.map": "/rk-arkgt-website/static/css/main.7f3a641c.css.map",
-    "main.df9e3759.js.map": "/rk-arkgt-website/static/js/main.df9e3759.js.map"
+    "main.551b8f14.js.map": "/rk-arkgt-website/static/js/main.551b8f14.js.map"
   },
   "entrypoints": [
     "static/css/main.7f3a641c.css",
-    "static/js/main.df9e3759.js"
+    "static/js/main.551b8f14.js"
   ]
 }
