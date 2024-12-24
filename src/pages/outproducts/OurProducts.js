@@ -31,16 +31,15 @@ const style = {
 };
 
 const products = [
-    { id: 1, image: 'mineral1.jpg', title: 'Mineral A', description: 'Description of Mineral A. Some more details here.' },
-    { id: 2, image: 'mineral2.jpg', title: 'Mineral B', description: 'Description of Mineral B. Some more details here.' },
-    { id: 3, image: 'mineral3.jpg', title: 'Mineral C', description: 'Description of Mineral C. Some more details here.' },
-    { id: 4, image: 'mineral4.jpg', title: 'Mineral D', description: 'Description of Mineral D. Some more details here.' },
-    { id: 5, image: 'mineral5.jpg', title: 'Mineral E', description: 'Description of Mineral E. Some more details here.' },
-    { id: 6, image: 'mineral6.jpg', title: 'Mineral F', description: 'Description of Mineral F. Some more details here.' },
-    { id: 7, image: 'mineral7.jpg', title: 'Mineral G', description: 'Description of Mineral G. Some more details here.' },
-    { id: 8, image: 'mineral8.jpg', title: 'Mineral H', description: 'Description of Mineral H. Some more details here.' },
-    { id: 9, image: 'mineral9.jpg', title: 'Mineral I', description: 'Description of Mineral I. Some more details here.' },
-    { id: 10, image: 'mineral10.jpg', title: 'Mineral J', description: 'Description of Mineral J. Some more details here.' },
+    { id: 1, image: '/assets/images/ourproducts/product1_garnet.jpg', title: 'Garnet', description: 'A high-performance abrasive used in waterjet cutting, sandblasting, and filtration processes. Our Garnet is sourced and processed to ensure uniformity and efficiency in various industrial applications.' },
+    { id: 2, image: '/assets/images/ourproducts/product2_ilmenite.jpg', title: 'Ilmenite', description: 'An essential raw material for titanium dioxide production, Ilmenite is widely used in pigment industries, coatings, and other manufacturing applications. We supply high-grade Ilmenite to meet stringent industry requirements.' },
+    { id: 3, image: '/assets/images/ourproducts/product3_sillimanite.jpg', title: 'Sillimanite', description: 'Renowned for its heat resistance and durability, Sillimanite is a preferred choice for refractory and ceramic industries. Our Sillimanite is sourced and processed to deliver maximum performance and reliability.' },
+    { id: 4, image: '/assets/images/ourproducts/product1_garnet.jpg', title: 'Garnet2', description: 'A high-performance abrasive used in waterjet cutting, sandblasting, and filtration processes. Our Garnet is sourced and processed to ensure uniformity and efficiency in various industrial applications.' },
+    { id: 5, image: '/assets/images/ourproducts/product2_ilmenite.jpg', title: 'Ilmenite2', description: 'An essential raw material for titanium dioxide production, Ilmenite is widely used in pigment industries, coatings, and other manufacturing applications. We supply high-grade Ilmenite to meet stringent industry requirements.' },
+    { id: 6, image: '/assets/images/ourproducts/product3_sillimanite.jpg', title: 'Sillimanite2', description: 'Renowned for its heat resistance and durability, Sillimanite is a preferred choice for refractory and ceramic industries. Our Sillimanite is sourced and processed to deliver maximum performance and reliability.' },
+    { id: 7, image: '/assets/images/ourproducts/product1_garnet.jpg', title: 'Garnet3', description: 'A high-performance abrasive used in waterjet cutting, sandblasting, and filtration processes. Our Garnet is sourced and processed to ensure uniformity and efficiency in various industrial applications.' },
+    { id: 8, image: '/assets/images/ourproducts/product2_ilmenite.jpg', title: 'Ilmenite3', description: 'An essential raw material for titanium dioxide production, Ilmenite is widely used in pigment industries, coatings, and other manufacturing applications. We supply high-grade Ilmenite to meet stringent industry requirements.' },
+    { id: 9, image: '/assets/images/ourproducts/product3_sillimanite.jpg', title: 'Sillimanite3', description: 'Renowned for its heat resistance and durability, Sillimanite is a preferred choice for refractory and ceramic industries. Our Sillimanite is sourced and processed to deliver maximum performance and reliability.' },
 ];
 
 const OurProducts = () => {
@@ -73,7 +72,7 @@ const OurProducts = () => {
                 {visibleProducts.map((product) => (
                     <Grid item xs={12} sm={6} md={4} lg={3} key={product.id}> {/* Responsive grid items */}
                         <Item elevation={3} onClick={() => handleOpen(product)}>
-                            <img src={product.image} alt={product.title} style={{ maxWidth: '100%', height: 'auto' }} />
+                            <img src={product.image} alt={product.title} style={{ width: '250px', height: '250px' }} />
                             <Typography variant="h6" gutterBottom>
                                 {product.title}
                             </Typography>

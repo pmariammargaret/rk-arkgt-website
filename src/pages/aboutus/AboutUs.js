@@ -19,8 +19,8 @@ const AboutUs = () => {
       sx={{
         display: 'flex',
         flexDirection: 'column',
-        minHeight: '100vh', // Ensure full viewport height
-        backgroundColor: '',//'#e0f2f7', // Light blue background
+        minHeight: '70vh', // Ensure full viewport height
+        backgroundColor: '#e0f2f7',//'#e0f2f7', // Light blue background
         padding: 7,
       }}
     >
