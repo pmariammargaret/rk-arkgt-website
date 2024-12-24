@@ -8,6 +8,7 @@ import Modal from '@mui/material/Modal';
 import IconButton from '@mui/material/IconButton';
 import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
+import websiteData from '../../data/website_data.json';
 
 const Item = styled(Paper)(({ theme }) => ({
     backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
@@ -72,7 +73,7 @@ const OurProducts = () => {
                 {visibleProducts.map((product) => (
                     <Grid item xs={12} sm={6} md={4} lg={3} key={product.id}> {/* Responsive grid items */}
                         <Item elevation={3} onClick={() => handleOpen(product)}>
-                            <img src={product.image} alt={product.title} style={{ width: '250px', height: '250px' }} />
+                            <img src={`${websiteData.resPrefix}${product.image}`} alt={product.title} style={{ width: '250px', height: '250px' }} />
                             <Typography variant="h6" gutterBottom>
                                 {product.title}
                             </Typography>

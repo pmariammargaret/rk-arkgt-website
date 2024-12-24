@@ -3,6 +3,7 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import './Home.css'; // Ensure you create and import a CSS file for custom styles
+import websiteData from '../../data/website_data.json';
 
 const images = [
   { src: '/assets/images/home/home-slider-0-yourhappiness.jpg', text: 'Driven by Your Happiness' },
@@ -31,7 +32,7 @@ function Home() {
       <Slider {...settings}>
         {images.map((image, index) => (
           <div key={index} className="slider-item">
-            <img src={image.src} alt={`Slide ${index}`} className="slider-image" />
+            <img src={`${websiteData.resPrefix}${image.src}`} alt={`Slide ${index}`} className="slider-image" />
             <div className="slider-text">{image.text}</div>
           </div>
         ))}
