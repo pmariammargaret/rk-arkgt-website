@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/arkrk-arkgt-website/static/css/main.c4e8fd9e.css",
-    "main.js": "/arkrk-arkgt-website/static/js/main.4d4f9842.js",
-    "static/media/gill-sans-ultra-bold.ttf": "/arkrk-arkgt-website/static/media/gill-sans-ultra-bold.4bdf0eac54f0e5c6807c.ttf",
-    "static/media/slick.svg": "/arkrk-arkgt-website/static/media/slick.2630a3e3eab21c607e21.svg",
-    "static/media/slick.eot": "/arkrk-arkgt-website/static/media/slick.a4e97f5a2a64f0ab1323.eot",
-    "static/media/slick.ttf": "/arkrk-arkgt-website/static/media/slick.c94f7671dcc99dce43e2.ttf",
-    "static/media/slick.woff": "/arkrk-arkgt-website/static/media/slick.295183786cd8a1389865.woff",
-    "index.html": "/arkrk-arkgt-website/index.html",
-    "main.c4e8fd9e.css.map": "/arkrk-arkgt-website/static/css/main.c4e8fd9e.css.map",
-    "main.4d4f9842.js.map": "/arkrk-arkgt-website/static/js/main.4d4f9842.js.map"
+    "main.css": "/rk-arkgt-website/npm%20run%20build/static/css/main.bb070a2b.css",
+    "main.js": "/rk-arkgt-website/npm%20run%20build/static/js/main.4d4f9842.js",
+    "static/media/gill-sans-ultra-bold.ttf": "/rk-arkgt-website/npm%20run%20build/static/media/gill-sans-ultra-bold.4bdf0eac54f0e5c6807c.ttf",
+    "static/media/slick.svg": "/rk-arkgt-website/npm%20run%20build/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/rk-arkgt-website/npm%20run%20build/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/rk-arkgt-website/npm%20run%20build/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/rk-arkgt-website/npm%20run%20build/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/rk-arkgt-website/npm%20run%20build/index.html",
+    "main.bb070a2b.css.map": "/rk-arkgt-website/npm%20run%20build/static/css/main.bb070a2b.css.map",
+    "main.4d4f9842.js.map": "/rk-arkgt-website/npm%20run%20build/static/js/main.4d4f9842.js.map"
   },
   "entrypoints": [
-    "static/css/main.c4e8fd9e.css",
+    "static/css/main.bb070a2b.css",
     "static/js/main.4d4f9842.js"
   ]
 }
