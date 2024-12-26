@@ -1,7 +1,7 @@
 import React from 'react';
 import { useLocation } from 'react-router-dom';
 import Home from './pages/home/Home';
-import OurProduct from './pages/outproducts/OurProducts';
+import OurProducts from './pages/ourproducts/OurProducts';
 import ContactUs from './pages/contactus/ContactUs';
 import Header from './components/header/Header';
 import Footer from './components/footer/Footer';
@@ -21,11 +21,11 @@ function App() {
         {location.pathname === '/home' && <Home />}
         {location.pathname === '/aboutus' && <AboutUs />}
         {location.pathname === '/whyus' && <WhyUS />}
-        {location.pathname === '/ourproduct' && <OurProduct />}
+        {location.pathname === '/ourproducts' && <OurProducts />}
         {location.pathname === '/contactus' && <ContactUs />}
         {location.pathname === '/team' && <Team />}
       </div>
-      <Footer />
+      <Footer /> 
     </>
   );
 }

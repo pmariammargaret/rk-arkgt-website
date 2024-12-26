@@ -7,7 +7,7 @@ import Container from '@mui/material/Container';
 import Grid from '@mui/material/Grid';
 import EmailIcon from '@mui/icons-material/Email';
 import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
-import websiteData from '../../data/website_data.json';
+import websiteData from '../../data/website_config.js';
 
 const Item = styled(Paper)(({ theme }) => ({
     backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
@@ -30,16 +30,16 @@ const ContactUs = () => {
         >
             <Container maxWidth="md">
                 <Typography variant="h4" fontWeight="bold" color="black" gutterBottom align='center'>
-                    Contact Us
+                    {websiteData.pages.contactus.title}
                 </Typography>
                 <Grid container spacing={3}>
                     <Grid item xs={12} md={6}>
                         <Item elevation={3}>
                             <Typography variant="h6" gutterBottom>
-                                <b>Get in Touch</b>
+                                <b>{websiteData.pages.contactus.leftPanel.title}</b>
                             </Typography>
                             <Typography variant="body1" gutterBottom>
-                                Contact us via email or phone.
+                                {websiteData.pages.contactus.leftPanel.content}
                             </Typography>
                             <Box sx={{ display: 'flex', alignItems: 'center', mb: 1 }}>{/*Email box with icon*/}
                                 <EmailIcon sx={{ mr: 1 }} />
@@ -58,7 +58,7 @@ const ContactUs = () => {
                     <Grid item xs={12} md={6}>
                         <Item elevation={3}>
                             <Typography variant="body1" gutterBottom>
-                                Any questions or remarks? Just write us a message!
+                                {websiteData.pages.contactus.rightPanel.content}
                             </Typography>
                             <Grid container spacing={2}>
                                 <Grid item xs={12}>

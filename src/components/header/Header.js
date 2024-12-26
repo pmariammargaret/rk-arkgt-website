@@ -3,10 +3,13 @@ import { AppBar, Box, Typography, Toolbar } from '@mui/material';
 import { styled } from '@mui/material/styles';
 import { Link } from 'react-router-dom';
 import MenuHB from '../menu/MenuHB';
-import websiteData from '../../data/website_data.json';
 import './header.css'; // Import your CSS file
 import PhoneIcon from '@mui/icons-material/Phone';
 import EmailIcon from '@mui/icons-material/Email';
+
+import websiteData  from '../../data/website_config.js';
+
+//const websiteData = webConfig;
 
 const StyledToolbar = styled(Toolbar)({
   display: 'flex',

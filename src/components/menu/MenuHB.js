@@ -2,6 +2,7 @@ import React from 'react';
 import { IconButton, Menu, MenuItem } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 import { Link } from 'react-router-dom';
+import websiteData from '../../data/website_config.js';
 
 const MenuHB = () => {
   const [anchorEl, setAnchorEl] = React.useState(null);
@@ -35,10 +36,10 @@ const MenuHB = () => {
           'aria-labelledby': 'basic-button',
         }}
       >
-        <MenuItem onClick={handleClose} component={Link} to="/">Home</MenuItem>
-        <MenuItem onClick={handleClose} component={Link} to="/whyus">Why Us</MenuItem>
-        <MenuItem onClick={handleClose} component={Link} to="/ourproduct">Our Product</MenuItem>
-        <MenuItem onClick={handleClose} component={Link} to="/contactus">Contact Us</MenuItem>
+        <MenuItem onClick={handleClose} component={Link} to="/">{websiteData.pages.home.title}</MenuItem>
+        <MenuItem onClick={handleClose} component={Link} to="/whyus">{websiteData.pages.whyus.title}</MenuItem>
+        <MenuItem onClick={handleClose} component={Link} to="/ourproducts">{websiteData.pages.ourproducts.title}</MenuItem>
+        <MenuItem onClick={handleClose} component={Link} to="/contactus">{websiteData.pages.contactus.title}</MenuItem>
       </Menu>
     </>
   );

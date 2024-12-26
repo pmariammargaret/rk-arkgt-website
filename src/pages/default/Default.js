@@ -4,7 +4,7 @@ import Home from '../home/Home';
 import WhyUs from '../whyus/WhyUs';
 import AboutUs from '../aboutus/AboutUs';
 import HL from '../../components/html/HL';
-import OurProducts from '../outproducts/OurProducts';
+import OurProducts from '../ourproducts/OurProducts';
 
 function Default() {
     return (

@@ -7,6 +7,7 @@ import ListItem from '@mui/material/ListItem';
 import ListItemButton from '@mui/material/ListItemButton';
 import ListItemText from '@mui/material/ListItemText';
 import Typography from '@mui/material/Typography';
+import websiteData from '../../data/website_config.js';
 
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
@@ -17,11 +18,9 @@ const Item = styled(Paper)(({ theme }) => ({
 }));
 
 const LeftSideMenu = ({ onMenuItemClick, selectedMenuItem }) => {
-  const menuItems = ['INNOVATION', 'PERFORMANCE', 'RELIABILITY', 'QUALITY', 'GLOBAL'];
-
   return (
     <List>
-      {menuItems.map((item) => (
+      {websiteData.pages.whyus.menuItems.map((item) => (
         <ListItem key={item} disablePadding>
           <ListItemButton
             selected={selectedMenuItem === item}
@@ -50,28 +49,6 @@ const ContentBox = ({ title, description }) => {
 
 const WhyUs = () => {
   const [selectedMenuItem, setSelectedMenuItem] = React.useState('INNOVATION');
-  const content = {
-    INNOVATION: {
-      title: "Innovation",
-      description: "We constantly strive to develop cutting-edge solutions that push the boundaries of what's possible. Our commitment to innovation drives us to explore new technologies and methodologies to deliver exceptional results for our clients."
-    },
-    PERFORMANCE: {
-      title: "Performance",
-      description: "We are dedicated to achieving outstanding performance in every aspect of our work. From efficient processes to high-quality deliverables, we focus on maximizing value and exceeding expectations. Our relentless pursuit of excellence ensures that our clients receive the best possible outcomes."
-    },
-    RELIABILITY: {
-      title: "Reliability",
-      description: "We understand the importance of trust and dependability. Our clients rely on us to deliver consistent, high-quality services and solutions. We are committed to maintaining the highest standards of professionalism and integrity to ensure that our clients can always count on us."
-    },
-    QUALITY: {
-      title: "Quality Assurance",
-      description: "We are committed to delivering exceptional quality in everything we do. Our rigorous quality assurance processes and attention to detail ensure that our clients receive products and services that meet the highest standards. We are dedicated to continuous improvement and strive to exceed expectations in every project we undertake."
-    },
-    GLOBAL: {
-      title: "Global Reach",
-      description: "Expertise in exporting industrial minerals to international markets with efficient logistics."
-    }
-  };
 
   const handleMenuItemClick = (item) => {
     setSelectedMenuItem(item);
@@ -91,7 +68,7 @@ const WhyUs = () => {
         </Box>
         <Box sx={{ width: '70%', pl: 2, display: 'flex', flexDirection: 'column', flexGrow: 1 }}>
           <Paper elevation={3} sx={{ flexGrow: 1, padding: 2 }}>
-            <ContentBox  title={content[selectedMenuItem].title} description={content[selectedMenuItem].description} />
+            <ContentBox  title={websiteData.pages.whyus.menuItemsDetails[selectedMenuItem].title} description={websiteData.pages.whyus.menuItemsDetails[selectedMenuItem].description} />
           </Paper>
         </Box>
       </Box>

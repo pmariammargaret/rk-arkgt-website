@@ -24,12 +24,75 @@
       "whatsapp": ""
 
     },
-    "home":{},
-    "about": {
+    "pages": {
+      "home":{
+        "title": "Home",
+        "images" : [
+          { "src":"/assets/images/home/home-slider-0-yourhappiness.jpg", "text":"Driven by Your Happiness" },
+          { "src":"/assets/images/home/home-slider-1-selectedrawmat.jpg", "text":"From Selected Raw Material" },
+          { "src":"/assets/images/home/home-slider-2-deliverwithcare.jpg", "text":"Delivered With Care" },
+          { "src":"/assets/images/home/home-slider-3-trackdelivery.jpg", "text":"Track Delivery" },
+          { "src":"/assets/images/home/home-slider-4-since.jpg", "text":"Since 2023" },
+          { "src":"/assets/images/home/home-slider-5-deliveredontime.jpg", "text":"Delivered on Time" },
+          { "src":"/assets/images/home/home-slider-6-quality.jpg", "text":"Quality First" }  
+        ]
+      },
+      "aboutus": {
       "title": "About Us",
-      "description": "ARK General Trading FZ-LCC is a trading company based in Ras Al Khaimah, United Arab Emirates. We sell and buy all types of products.",
-      "image": "/assets/images/about-image.jpg"
+      "content": "At ARK General Trading LLC, we pride ourselves on being a reliable and trusted name in the global industrial minerals market. With operations backed by RK Minerals & Industrial Supplies in India, we ensure the seamless procurement and export of high-quality raw materials to support industries across various sectors. <br/><br/> Our extensive experience, commitment to quality, and customer-first approach enable us to deliver consistent value to our clients. By focusing on ethical sourcing and sustainable practices, we aim to contribute positively to industrial growth worldwide. <br/><br/>  <b>Our Mission</b>  <br/> To provide top-quality industrial minerals to our clients, ensuring excellence in service, sustainability, and innovation. <br/><br/>  <b>Our Vision</b>  <br/> To be a global leader in the supply and export of industrial minerals, known for quality, reliability, and customer satisfaction."
+      },
+      "whyus": {
+        "title": "About Us",
+        "menuItems" : [ "INNOVATION", "PERFORMANCE", "RELIABILITY", "QUALITY", "GLOBAL" ],
+        "menuItemsDetails" : {
+              "INNOVATION": {
+                "title": "Innovation",
+                "description": "We constantly strive to develop cutting-edge solutions that push the boundaries of what's possible. Our commitment to innovation drives us to explore new technologies and methodologies to deliver exceptional results for our clients."
+              },
+              "PERFORMANCE": {
+                "title": "Performance",
+                "description": "We are dedicated to achieving outstanding performance in every aspect of our work. From efficient processes to high-quality deliverables, we focus on maximizing value and exceeding expectations. Our relentless pursuit of excellence ensures that our clients receive the best possible outcomes."
+              },
+              "RELIABILITY": {
+                "title": "Reliability",
+                "description": "We understand the importance of trust and dependability. Our clients rely on us to deliver consistent, high-quality services and solutions. We are committed to maintaining the highest standards of professionalism and integrity to ensure that our clients can always count on us."
+              },
+              "QUALITY": {
+                "title": "Quality Assurance",
+                "description": "We are committed to delivering exceptional quality in everything we do. Our rigorous quality assurance processes and attention to detail ensure that our clients receive products and services that meet the highest standards. We are dedicated to continuous improvement and strive to exceed expectations in every project we undertake."
+              },
+              "GLOBAL": {
+                "title": "Global Reach",
+                "description": "Expertise in exporting industrial minerals to international markets with efficient logistics."
+              }
+            }
+      },
+      "ourproducts": {
+        "title": "Our Products",
+        "products": [
+          { "id": 1, "image": "/assets/images/ourproducts/product1_garnet.jpg", "title": "Garnet", "description": "A high-performance abrasive used in waterjet cutting, sandblasting, and filtration processes. Our Garnet is sourced and processed to ensure uniformity and efficiency in various industrial applications." },
+          { "id": 2, "image": "/assets/images/ourproducts/product2_ilmenite.jpg", "title": "Ilmenite", "description": "An essential raw material for titanium dioxide production, Ilmenite is widely used in pigment industries, coatings, and other manufacturing applications. We supply high-grade Ilmenite to meet stringent industry requirements." },
+          { "id": 3, "image": "/assets/images/ourproducts/product3_sillimanite.jpg", "title": "Sillimanite", "description": "Renowned for its heat resistance and durability, Sillimanite is a preferred choice for refractory and ceramic industries. Our Sillimanite is sourced and processed to deliver maximum performance and reliability." },
+          { "id": 4, "image": "/assets/images/ourproducts/product1_garnet.jpg", "title": "Garnet2", "description": "A high-performance abrasive used in waterjet cutting, sandblasting, and filtration processes. Our Garnet is sourced and processed to ensure uniformity and efficiency in various industrial applications." },
+          { "id": 5, "image": "/assets/images/ourproducts/product2_ilmenite.jpg", "title": "Ilmenite2", "description": "An essential raw material for titanium dioxide production, Ilmenite is widely used in pigment industries, coatings, and other manufacturing applications. We supply high-grade Ilmenite to meet stringent industry requirements." },
+          { "id": 6, "image": "/assets/images/ourproducts/product3_sillimanite.jpg", "title": "Sillimanite2", "description": "Renowned for its heat resistance and durability, Sillimanite is a preferred choice for refractory and ceramic industries. Our Sillimanite is sourced and processed to deliver maximum performance and reliability." },
+          { "id": 7, "image": "/assets/images/ourproducts/product1_garnet.jpg", "title": "Garnet3", "description": "A high-performance abrasive used in waterjet cutting, sandblasting, and filtration processes. Our Garnet is sourced and processed to ensure uniformity and efficiency in various industrial applications." },
+          { "id": 8, "image": "/assets/images/ourproducts/product2_ilmenite.jpg", "title": "Ilmenite3", "description": "An essential raw material for titanium dioxide production, Ilmenite is widely used in pigment industries, coatings, and other manufacturing applications. We supply high-grade Ilmenite to meet stringent industry requirements." },
+          { "id": 9, "image": "/assets/images/ourproducts/product3_sillimanite.jpg", "title": "Sillimanite3", "description": "Renowned for its heat resistance and durability, Sillimanite is a preferred choice for refractory and ceramic industries. Our Sillimanite is sourced and processed to deliver maximum performance and reliability." }
+        ]
+      },
+      "contactus":{
+        "title": "Contact Us",
+        "leftPanel": {
+          "title": "Get in Touch",
+          "content": "For any inquiries or feedback, please feel free to contact us. We look forward to hearing from you."
+        },
+        "rightPanel": {
+          "content": "Our address"
+        }
+      }
     },
+    
     "services": {
       "title": "Our Services",
       "description": "We provide a wide range of services to our customers. Our services include buying and selling products, shipping and delivery, and customer support.",
