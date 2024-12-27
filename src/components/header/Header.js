@@ -6,10 +6,8 @@ import MenuHB from '../menu/MenuHB';
 import './header.css'; // Import your CSS file
 import PhoneIcon from '@mui/icons-material/Phone';
 import EmailIcon from '@mui/icons-material/Email';
-
 import websiteData  from '../../data/website_config.js';
 
-//const websiteData = webConfig;
 
 const StyledToolbar = styled(Toolbar)({
   display: 'flex',

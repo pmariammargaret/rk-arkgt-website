@@ -1,8 +1,7 @@
 import './footer.light.css'; // Import your CSS file
 import React from 'react';
-import websiteData from '../../data/website_data.json';
 import HL from '../html/HL';
-
+import websiteData from '../../data/website_config.js';
 
 function Footer() {
   return (
