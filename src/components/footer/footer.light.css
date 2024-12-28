@@ -1,0 +1,21 @@
+/* Footer.css */
+.footer {
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+    position: relative; /* For sticky footer if needed */
+    bottom: 0;
+    width: 100%;
+    font-size: small;
+  }
+  
+  .footer-content {
+      display: flex;
+      flex-direction: column;
+      align-items: left;
+      font-size: small;
+  }
+  
+  .footer nav {
+      margin-top: 10px;
+  }

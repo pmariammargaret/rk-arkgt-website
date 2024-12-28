@@ -1,0 +1,21 @@
+.slider-item {
+    position: relative;
+  }
+  
+  .slider-image {
+    width: 2000px;
+    height: 500px;
+    margin: 0px; /* Remove any default margin */
+    padding: 0px; /* Remove any default padding */
+  }
+  
+  .slider-text {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: white; /* Set text color to black */
+    background-color: transparent; /* Remove background color */
+    padding: 100px;
+    border-radius: 5px;
+    font-size: 46px;
+  }
